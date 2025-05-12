@@ -252,6 +252,7 @@ p {
 }
 
 .cards {
+  color: #151515;
   display: flex;
   justify-content: center;
   gap: 20px;
