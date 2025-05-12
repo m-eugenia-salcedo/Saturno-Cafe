@@ -29,12 +29,7 @@ main {
   background-image: url(../multimedia/fotos/Saturno\ cafe\ -\ motivo-para-fondo-gris.png);
   flex: 1;
   padding: 20px;
-  }
-
-  main.dividido {
-    display: flex;
-    flex-wrap: wrap;
-  }
+}
 
 main.dividido{
   display: flex;
@@ -135,6 +130,7 @@ p {
   box-sizing: border-box;
   padding: 0 0 2%;
 }
+
 .mitad-1 {
   width: 50%;
   height: 100%;
@@ -257,6 +253,7 @@ p {
 }
 
 .cards {
+  color: #151515;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -319,7 +316,7 @@ p {
 #button-contacto-a{
   padding: 10px 20px;
   background-color: #7b6d8d;
-  color: #212529;
+  color: var(--color-primario);
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
