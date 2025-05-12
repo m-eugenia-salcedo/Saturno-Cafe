@@ -29,7 +29,12 @@ main {
   background-image: url(../multimedia/fotos/Saturno\ cafe\ -\ motivo-para-fondo-gris.png);
   flex: 1;
   padding: 20px;
-}
+  }
+
+  main.dividido {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 main.dividido{
   display: flex;
