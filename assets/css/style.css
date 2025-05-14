@@ -13,7 +13,8 @@
   padding: 0px;
 }
 
-html, body {
+html,
+body {
   background-color: #3f3f3f;
   color: var(--color-primario);
   background-image: url(../multimedia/fotos/Saturno\ cafe\ -\ motivo-para-fondo-gris.png);
@@ -31,7 +32,7 @@ main {
   padding: 20px;
 }
 
-main.dividido{
+main.dividido {
   display: flex;
   flex-wrap: wrap;
 }
@@ -48,6 +49,11 @@ h1 {
   max-width: 100%;
 }
 
+.title-contact {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+
 h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
@@ -59,10 +65,10 @@ h3 {
 ul {
   list-style: none;
   display: flex;
-/*   display: inline-flex; */
+  /*   display: inline-flex; */
   justify-content: right;
   gap: 40px;
-  padding:0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 22px;
 }
@@ -97,7 +103,7 @@ p {
   padding-right: 20px;
 }
 
-#logo-img{
+#logo-img {
   height: auto;
   max-height: 50px;
   width: auto;
@@ -116,7 +122,7 @@ p {
   background-color: #564270;
   border-radius: 5px;
   padding: 5px 10px;
-  transition: background-color 0.2s ease;
+  /* transition: background-color 0.2s ease; */
 }
 
 .nav-link {
@@ -156,6 +162,13 @@ h2 {
   margin-top: 5%;
 }
 
+h4 {
+  font-family: "Bebas Neue", sans-seri;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 50px;
+}
+
 p {
   text-align: center;
   font-weight: 100;
@@ -184,7 +197,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #7b6d8d;
-  max-width: 55%;
+  max-width: 75%;
   margin: auto;
   padding: 4%;
   border: 2px solid #b1754b;
@@ -264,7 +277,7 @@ p {
 
 .membresia-card {
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 400px;
   max-width: 100%;
   padding: 20px;
@@ -274,7 +287,7 @@ p {
   overflow-wrap: break-word;
 }
 
-.membresia-card:hover{
+.membresia-card:hover {
   background-color: #564270;
   color: white;
 }
@@ -285,35 +298,34 @@ p {
   margin-bottom: 30px;
 }
 
-.card-subtitle { 
+.card-subtitle {
   text-align: center;
   font-size: 0.95rem;
   margin-bottom: 15px;
   padding-top: 10px;
 }
 
-.lista-benef-membresias{
+.lista-benef-membresias {
   font-size: 0.9rem;
-  margin: 10px 0 0 20px; 
+  margin: 10px 0 0 20px;
   padding-left: 0;
   list-style-type: disc;
   display: list-item;
 }
 
-
-.contenedor-contacto{
+.contenedor-contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;    
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
 }
 
-#p-contacto-a{
+#p-contacto-a {
   color: white;
 }
 
-#button-contacto-a{
+#button-contacto-a {
   padding: 10px 20px;
   background-color: #7b6d8d;
   color: var(--color-primario);
@@ -332,19 +344,68 @@ p {
   background-color: #564270;
 }
 
+/* Productos */
 
+.grid-categorias {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13%, 5fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(30%, 5fr)); */
+  gap: 60px;
+}
+
+.categorias {
+  padding: 4%;
+  background-color: #7b6d8d;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.categorias h4 {
+  margin: 15px 0 0 0;
+  color: #d6c4a0;
+  text-align: center;
+}
+
+.categorias :hover {
+  color: #6f4e37;
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+.categoria img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-product {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* productos Carrusel*/
+.carousel-inner{
+  margin-bottom: 5%;
+}
+
+
+/* Footer */
 .footer {
   background-color: #151515;
   padding: 20px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   min-width: 0;
   overflow-wrap: break-word;
 }
 
-.footer-text{
+.footer-text {
   color: white;
   margin: 0;
   font-size: 14px;
@@ -356,7 +417,7 @@ p {
   height: auto;
   max-height: 40px;
   width: 100%;
-  max-width: 100px; 
+  max-width: 100px;
   object-fit: contain;
 }
 
@@ -404,6 +465,15 @@ p {
     width: 90%;
     padding-bottom: 50%;
     margin: 4% auto;
+  }
+
+  /* productos */
+
+  .grid-categorias {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 5fr));
+    gap: 60px;
   }
 }
 
@@ -463,6 +533,13 @@ p {
     padding-bottom: 65%;
     margin: 6% auto;
   }
+  /* productos */
+  .grid-categorias {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+    gap: 60px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -484,7 +561,8 @@ p {
     object-fit: contain;
   }
 
-  .card-title, .card-subtitle {
+  .card-title,
+  .card-subtitle {
     font-size: 14px;
   }
 
@@ -520,5 +598,13 @@ p {
     align-items: center;
     gap: 5px;
     width: 100%;
+  }
+
+  /* Productos */
+  .grid-categorias {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+    gap: 60px;
   }
 }

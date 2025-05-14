@@ -1,30 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saturno Café</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos-Saturno Café</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
 
+  <body>
     <div class="content">
+      <nav class="navbar">
+        <a href="./index.html">
+          <img
+            src="./assets/multimedia/fotos/Saturno2SINTITULO.png"
+            alt="Logo de SATURNO Cafetería"
+            id="logo-img"
+          />
+        </a>
 
-        <nav class="navbar">
+        <ul class="nav-lista">
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./membresias.html">Membresías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactos.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
 
-            <a href="./index.html">
-            <img src="./assets/multimedia/fotos/Saturno2SINTITULO.png" 
-                alt="Logo de SATURNO Cafetería" id="logo-img">
-            </a>
-            
-            <ul class="nav-lista">
-            <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Agenda</a></li>
-            <li class="nav-item"><a class="nav-link" href="./membresias.html">Membresías</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contactos.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <main>
+        <h1>Nuestros Productos</h1>
+
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <img
+                src="./assets/multimedia/fotos/Productos/Bolsas_de _Café/constelaciones.png"
+                class="d-block w-100"
+                alt="constelaciones"
+               />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/multimedia/fotos/Productos/Bolsas_de _Café/motor-combustion.png"
+                class="d-block w-100"
+                alt="MotorCombustion"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/multimedia/fotos/Productos/Bolsas_de _Café/orbita-clasica.png"
+                class="d-block w-100"
+                alt="OrbitaClasica"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/multimedia/fotos/Productos/Bolsas_de _Café/satelites-solitarios.png"
+                class="d-block w-100"
+                alt="SatelitesSolitarios"
+              />
+            </div>
+          </div>
+        </div>
+
+        <section class="grid-categorias">
+          <a href="./remeras.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Remeras/Remera Saturnino Black.jpg"
+              alt="Remeras"
+            />
+            <h4>Remeras</h4>
+          </a>
+
+          <a href="./buzos.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Buzos/Hoddie Saturnino Grey.jpg"
+              alt="Buzos"
+            />
+            <h4>Buzos</h4>
+          </a>
+
+          <a href="./gorras.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Gorras/Gorra Universe.jpg"
+              alt="Gorras"
+            />
+            <h4>Gorras</h4>
+          </a>
+
+          <a href="./tazas.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Tazas/Taza-Saturnino.jpg"
+              alt="Tazas"
+            />
+            <h4>Tazas</h4>
+          </a>
+
+          <a href="./libretas.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Libretas/Libreta Saturnino.jpg"
+              alt="Libretas"
+            />
+            <h4>Libretas</h4>
+          </a>
+
+          <a href="./vasos.html" class="categorias">
+            <img
+              class="img-product"
+              src="./assets/multimedia/fotos/Productos/Vasos/Café-Take-Away-2.jpg"
+              alt="Vasos"
+            />
+            <h4>Vasos</h4>
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-izq">
+          <div class="footer-img">
+            <img
+              src="./assets/multimedia/fotos/Saturno2SINTITULO.png"
+              alt="logoSATURNOcafeteria"
+            />
+          </div>
+          <p class="footer-text">
+            ⚲ Direccion ficticia 123, Provincia, Argentina
+          </p>
+        </div>
+        <div class="footer-derecha">
+          <a href="https://www.facebook.com/FundacionYPF/"
+            ><img
+              src="./assets/multimedia/fotos/facebook.png"
+              alt="logo facebook"
+              width="25"
+          /></a>
+          <a href="https://www.instagram.com/fundacionypf/"
+            ><img
+              src="./assets/multimedia/fotos/instagram.png"
+              alt="logo instagram"
+              width="25"
+          /></a>
+          <a href="mailto:INGENIAS@ypf.com"
+            ><img
+              src="./assets/multimedia/fotos/arroba.png"
+              alt="logo email"
+              width="25"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
