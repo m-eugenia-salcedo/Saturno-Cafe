@@ -186,6 +186,27 @@ p {
   padding: 2% 15% 2%;
 }
 
+.banner{
+  background-image: url(/assets/multimedia/fotos/FondodeGalaxia.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 120px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
 .contenedor-formulario {
   width: 100%;
   height: auto;
