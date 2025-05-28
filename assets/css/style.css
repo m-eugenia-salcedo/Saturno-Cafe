@@ -207,6 +207,35 @@ p {
   font-size: 1.5rem;
 }
 
+.home-cafe-interior{
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home-eventos{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home-imagen{
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Para que la imagen no se deforme */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+#parrafo-presentacion{
+  padding: 20px;
+}
 .contenedor-formulario {
   width: 100%;
   height: auto;
