@@ -187,7 +187,7 @@ p {
 }
 
 .banner{
-  background-image: url(/assets/multimedia/fotos/FondodeGalaxia.png);
+  background-image: url(../multimedia/fotos/FondodeGalaxia.png);
   background-size: cover;
   background-position: center;
   color: white;
