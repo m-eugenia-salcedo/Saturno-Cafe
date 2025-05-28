@@ -392,9 +392,13 @@ p {
   border-radius: 20px;
 }
 
+.descripcion-cafe {
+  padding: 2px 0 5px;
+}
+
 /* productos Carrusel*/
 .carousel-inner {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   height: auto;
 }
 
@@ -413,12 +417,14 @@ p {
   display: block;
   border-radius: 25px;
 }
+.product-scale:hover {
+  transform: scale(1.03);
+}
 
 .remeras-card {
   width: 100%;
   height: auto;
   border-radius: 20px;
-
   padding: 4%;
   background-color: #7b6d8d;
   overflow: hidden;
@@ -447,7 +453,7 @@ p {
 }
 
 .colors {
-  margin: 5px 0 0;
+  margin: 5px 0 8px;
 }
 
 .color-dot {
@@ -472,13 +478,11 @@ p {
   background: #3f3f3f;
 }
 .color5 {
-  background:#7b6d8d;
+  background: #7b6d8d;
 }
 .color6 {
-  background:#696767;
+  background: #696767;
 }
-
-
 
 .custom-select-wrapper {
   width: 120px;
@@ -496,12 +500,24 @@ label {
   cursor: pointer;
 }
 
-.add-button {
-  padding: 0 4px 2px;
-  font-size: small;
+#contacto-product {
+  padding: 1%;
+  background-color: aliceblue;
+  color: #696767;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  max-width: 90%;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
-
+#contacto-product:hover {
+  background-color: #f7f3e3;
+}
 
 /* Footer */
 .footer {
