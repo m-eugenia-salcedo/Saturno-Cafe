@@ -261,7 +261,7 @@ p {
   color: white;
 }
 
-.formulario input {
+.formulario input, select {
   background-color: var(--color-primario);
   padding: 10px;
   border: 2px solid var(--color-violeta);
@@ -551,7 +551,11 @@ label {
   font-size: small;
 }
 
-
+.subtitulo-agenda {
+  display: flexbox;
+  padding-left: 25px;
+  text-align: left;
+}
 
 /* Footer */
 .footer {

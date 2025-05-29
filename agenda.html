@@ -27,7 +27,77 @@
     </nav>  
 
     <main>
+        <h1>AGENDA</h1>
+        <h2 class="subtitulo-agenda">EVENTOS QUE PODRÍAN INTERESARTE ...</h2>
 
+        <div class="container my-4">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+
+                <!-- Botón anterior -->
+                <button class="btn btn-outline-secondary" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                ‹
+                </button>
+
+                <!-- Carrusel reducido -->
+                <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="assets/multimedia/fotos/carrusel eventos/ceramica-evento.jpg" class="d-block w-100" alt="mujer en ceramica">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="assets/multimedia/fotos/carrusel eventos/evento-dj.jpg" class="d-block w-100" alt="dj tocando en cafeteria">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="assets/multimedia/fotos/carrusel eventos/libros-eventos.jpg" class="d-block w-100" alt="reunion con libros y cafe">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón siguiente -->
+                <button class="btn btn-outline-secondary" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                ›
+                </button>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <h2 class="subtitulo-agenda">RESERVA UNA MESA PARA VISITARNOS</h2>
+
+        <div class="contenedor-formulario">
+            <form class="formulario">
+                <h4>Datos de la reserva</h4>
+
+                <label for="Titular">Titular de la reserva</label>
+                <input
+                type="text"
+                name="Titular"
+                placeholder="Ingresa un nombre completo"
+                />
+
+                <label for="Email">Email</label>
+                <input type="email" name="Email" placeholder="Ingresa un correo electrónico" />
+
+                <label>Cantidad de personas</label>
+                <select>
+                    <option selected disabled>Seleccione la cantidad de personas que asistirán</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
 
     </main>
 
