@@ -186,7 +186,7 @@ p {
   padding: 2% 15% 2%;
 }
 
-.banner{
+.banner {
   background-image: url(../multimedia/fotos/FondodeGalaxia.png);
   background-size: cover;
   background-position: center;
@@ -207,7 +207,7 @@ p {
   font-size: 1.5rem;
 }
 
-.home-cafe-interior{
+.home-cafe-interior {
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -216,7 +216,6 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 
 .home-eventos-titulo {
   text-align: center;
@@ -231,17 +230,16 @@ p {
   margin: 0 20px;
 }
 
-
 .home-eventos-contenido {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .home-eventos-texto {
-  flex: 1 1 60%; 
+  flex: 1 1 60%;
   min-width: 250px;
   text-align: center;
 }
@@ -253,8 +251,7 @@ p {
   border-radius: 10px;
 }
 
-
-#parrafo-presentacion{
+#parrafo-presentacion {
   padding: 20px;
 }
 .contenedor-formulario {
@@ -282,7 +279,8 @@ p {
   color: white;
 }
 
-.formulario input, select {
+.formulario input,
+select {
   background-color: var(--color-primario);
   padding: 10px;
   border: 2px solid var(--color-violeta);
@@ -807,29 +805,29 @@ label {
 
   /*Carrusel*/
   .carousel-caption-custom {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 51%;
-  left: 25%;
-  transform: translateY(-50%);
-  color: white;
-  max-width: 500px;
-  padding: 3%;
-  border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 51%;
+    left: 25%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+    padding: 3%;
+    border-radius: 10px;
   }
 
   .carousel-caption-custom p {
-  font-size: 20px;
-  line-height: 25px;
-  width: 500px;
-  text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+    width: 500px;
+    text-align: left;
   }
-  p.banner-frase{
+  p.banner-frase {
     font-size: 10px;
     text-align: left;
   }
   .carousel-caption-custom h1 {
-    font-size:70px;
+    font-size: 70px;
     text-align: left;
     width: 500px;
     line-height: 50px;
@@ -840,10 +838,9 @@ label {
   }
 
   .button-a {
-    display: block; 
-    margin: 20px auto 0 auto; 
+    display: block;
+    margin: 20px auto 0 auto;
   }
-
 }
 
 @media (max-width: 930px) {
@@ -863,7 +860,6 @@ label {
     line-height: 68px;
   }
 }
-
 
 @media (max-width: 670px) {
   .nav-lista {
@@ -897,7 +893,6 @@ label {
   }
   /* carrusel */
 
-
   .carousel-caption-custom {
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -908,7 +903,6 @@ label {
     max-width: 500px;
     padding: 5%;
     border-radius: 10px;
-  
   }
   .carousel-caption-custom {
     background-color: rgba(0, 0, 0, 0.8);
@@ -927,20 +921,18 @@ label {
     line-height: 25px;
     width: 500px;
     text-align: left;
-    
   }
-  p.banner-frase{
+  p.banner-frase {
     font-size: 10px;
     text-align: left;
   }
   .carousel-caption-custom h1 {
-    font-size:70px;
+    font-size: 70px;
     text-align: left;
     width: 500px;
     line-height: 50px;
     padding: 1%;
   }
-    
 }
 
 @media (max-width: 480px) {
