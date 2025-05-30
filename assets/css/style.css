@@ -217,21 +217,42 @@ p {
   margin-right: 20px;
 }
 
-.home-eventos{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+
+.home-eventos-titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.home-imagen{
+/* Contenedor principal */
+.home-eventos {
+  padding: 20px;
+  margin: 0 20px;
+}
+
+
+.home-eventos-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.home-eventos-texto {
+  flex: 1 1 60%; 
+  min-width: 250px;
+  text-align: center;
+}
+
+.home-imagen {
   width: 200px;
   height: 200px;
-  object-fit: cover; /* Para que la imagen no se deforme */
-  border-radius: 10px; /* Opcional: bordes redondeados */
+  object-fit: cover;
+  border-radius: 10px;
 }
+
 
 #parrafo-presentacion{
   padding: 20px;
@@ -375,7 +396,9 @@ p {
   color: white;
 }
 
-#button-contacto-a {
+.button-a {
+  display: block; /* Para que el botón sea bloque y se pueda centrar */
+  margin: 20px auto 0 auto; /* Margen arriba y auto a los costados */
   padding: 10px 20px;
   background-color: #7b6d8d;
   color: var(--color-primario);
@@ -383,14 +406,14 @@ p {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  max-width: 90%;
-  text-align: center;
-  display: inline-block;
+  max-width: 250px;
+  width: 100%;
   box-sizing: border-box;
   font-size: 1rem;
+  text-align: center;
 }
 
-#button-contacto-a:hover {
+.button-a:hover {
   background-color: #564270;
 }
 
@@ -748,32 +771,37 @@ label {
   max-width: 500px;
   padding: 3%;
   border-radius: 10px;
- 
-}
+  }
 
   .carousel-caption-custom p {
   font-size: 20px;
   line-height: 25px;
   width: 500px;
   text-align: left;
-  
-}
-p.banner-frase{
-  font-size: 10px;
-  text-align: left;
-}
-.carousel-caption-custom h1 {
-  font-size:70px;
-  text-align: left;
-  width: 500px;
-  line-height: 50px;
-}
+  }
+  p.banner-frase{
+    font-size: 10px;
+    text-align: left;
+  }
+  .carousel-caption-custom h1 {
+    font-size:70px;
+    text-align: left;
+    width: 500px;
+    line-height: 50px;
+  }
+
+  .home-eventos-texto {
+    text-align: center;
+  }
+
+  .button-a {
+    display: block; 
+    margin: 20px auto 0 auto; 
+  }
 
 }
 
-
-
-@media (max-width: 600px) {
+@media (max-width: 670px) {
   .nav-lista {
     flex-direction: column;
     gap: 10px;
@@ -803,45 +831,55 @@ p.banner-frase{
   .cards {
     padding: 0 10px;
   }
-/* carrusel */
 
+  .home-imagen {
+    display: none;
+  }
 
-.carousel-caption-custom {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 51%;
-  left: 15%;
-  transform: translateY(-50%);
-  color: white;
-  max-width: 500px;
-  padding: 5%;
-  border-radius: 10px;
- 
-}
+  .home-eventos-texto {
+    text-align: center; /* Centramos el texto */
+  }
 
-.carousel-caption-custom p {
-  font-size: 20px;
-  line-height: 25px;
-  width: 500px;
-  text-align: left;
+  .button-a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* carrusel */
+
+  .carousel-caption-custom {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 51%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+    padding: 5%;
+    border-radius: 10px;
+  
+  }
+
+  .carousel-caption-custom p {
+    font-size: 20px;
+    line-height: 25px;
+    width: 500px;
+    text-align: left;
+    
+  }
+  p.banner-frase{
+    font-size: 10px;
+    text-align: left;
+  }
+  .carousel-caption-custom h1 {
+    font-size:70px;
+    text-align: left;
+    width: 500px;
+    line-height: 50px;
+    padding: 1%;
+  }
+    
   
 }
-p.banner-frase{
-  font-size: 10px;
-  text-align: left;
-}
-.carousel-caption-custom h1 {
-  font-size:70px;
-  text-align: left;
-  width: 500px;
-  line-height: 50px;
-  padding: 1%;
-}
-  
- 
-}
-
-
 
 
 @media (max-width: 480px) {
@@ -906,7 +944,7 @@ p.banner-frase{
     font-size: 0.75rem;
   }
 
-  #button-contacto-a {
+  .button-a {
     padding: 8px 10px;
     font-size: 0.75rem;
     width: 100%;
