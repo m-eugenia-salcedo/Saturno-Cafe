@@ -355,7 +355,7 @@ p {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13%, 5fr));
-  /* grid-template-columns: repeat(auto-fit, minmax(30%, 5fr)); */
+
   gap: 20px;
 }
 
