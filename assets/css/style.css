@@ -87,13 +87,22 @@ p {
   min-height: 100vh;
 }
 
+#logo-img {
+  height: auto;
+  max-height: 50px;
+  width: auto;
+  max-width: 100%;
+}
+
+.contenedor-nav {
+  padding: 0 0 0 20px;
+}
 .navbar {
   background-color: #151515;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .nav-lista {
   list-style: none;
   display: flex;
@@ -102,14 +111,6 @@ p {
   margin: 0;
   padding-right: 20px;
 }
-
-#logo-img {
-  height: auto;
-  max-height: 50px;
-  width: auto;
-  max-width: 100%;
-}
-
 .nav-item {
   color: #efdecd;
   margin-top: 10px;
@@ -127,7 +128,34 @@ p {
 
 .nav-link {
   text-decoration: none;
+  color: #f7f3e3 !important;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary.fixed-top {
+  padding: 0 0 0 0;
+}
+
+.container-fluid {
+  padding: 0 0 10px;
+  background-color: #151515;
   color: #f7f3e3;
+}
+
+.offcanvas-header {
+  background-color: #564270;
+  color: #efdecd;
+}
+
+.offcanvas-title {
+  font-size: 25px;
+}
+.offcanvas-body {
+  background-color: #151515;
+  padding: 0 0 0 0;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .mitad {
@@ -151,6 +179,10 @@ h1 {
   font-size: 60px;
   text-align: center;
   margin-top: 3%;
+}
+
+#titulo-agenda{
+  margin-top: 60px;
 }
 
 h2 {
@@ -187,6 +219,7 @@ p {
 }
 
 .banner {
+  margin-top: 3rem;
   background-image: url(../multimedia/fotos/FondodeGalaxia.png);
   background-size: cover;
   background-position: center;
@@ -226,6 +259,7 @@ p {
 
 /* Contenedor principal */
 .home-eventos {
+ 
   padding: 20px;
   margin: 0 20px;
 }
@@ -239,12 +273,18 @@ p {
 }
 
 .home-eventos-texto {
-  flex: 1 1 60%;
+  display: flex;
+  flex: 1 1 40%;
   min-width: 250px;
-  text-align: center;
 }
 
+#texto-agenda{
+  padding: 23px;
+}
+
+
 .home-imagen {
+  margin-right: 10px;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -395,8 +435,8 @@ select {
 }
 
 .button-a {
-  display: block; /* Para que el botón sea bloque y se pueda centrar */
-  margin: 20px auto 0 auto; /* Margen arriba y auto a los costados */
+  display:inline-block; /* Para que el botón sea bloque y se pueda centrar */
+  margin: 75px auto 0 20px; /* Margen arriba y auto a los costados */
   padding: 10px 20px;
   background-color: #7b6d8d;
   color: var(--color-primario);
@@ -405,7 +445,8 @@ select {
   font-weight: bold;
   cursor: pointer;
   max-width: 250px;
-  width: 100%;
+  width: 50%;
+  height: 75%; 
   box-sizing: border-box;
   font-size: 1rem;
   text-align: center;
