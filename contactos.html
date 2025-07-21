@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saturno Café</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/contactos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,11 +55,12 @@
         </p>
 
         <div class="contenedor-formulario">
-          <form class="formulario">
+          <form class="formulario" id="formulario" onsubmit="event.preventDefault(); registrarContacto();">
             <label for="Nombre">Nombre</label>
             <input
               type="text"
               name="Nombre"
+              id="nombreContacto"
               placeholder="Ingresa tu nombre completo"
             />
 
@@ -68,6 +68,7 @@
             <input
               type="email"
               name="Email"
+              id="emailContacto"
               placeholder="Ingresa tu correo electrónico"
             />
 
@@ -76,9 +77,10 @@
               class="caja-mensaje-grande"
               placeholder="Dejanos tu mensaje..."
               name="Mensaje"
+              id="mensajeContacto"
             ></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" >Enviar</button>
           </form>
         </div>
       </section>
@@ -139,5 +141,7 @@
         /></a>
       </div>
     </footer>
+
+    <script src="JS/script.js"></script>
   </body>
 </html>
