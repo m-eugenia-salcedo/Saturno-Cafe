@@ -6,7 +6,7 @@ function Contacto(id, nombre, email, mensaje) {
   this.mensaje = mensaje;
 }
 
-let contactos = [
+let contactos = JSON.parse(localStorage.getItem("contactos")) || [
   {
     id: 1,
     nombre: "Juan",
@@ -20,6 +20,10 @@ let contactos = [
     mensaje: "Hola podría mandar un cv?",
   },
 ];
+
+if (!localStorage.getItem("contactos")) {
+  localStorage.setItem("contactos", JSON.stringify(contactos));
+}
 
 function registrarContacto() {
   const nombre = document.querySelector("#nombreContacto").value;
@@ -43,9 +47,12 @@ function registrarContacto() {
   // creo y guardo lo del form en el array
   const contacto = new Contacto(id, nombre, email, mensaje);
   contactos.push(contacto);
+  localStorage.setItem("contactos", JSON.stringify(contactos));
+  alert(
+    "Gracias por comunicarte con nosotros! Te enviaremos una respuesta lo más pronto posible."
+  );
 
   // Limpiar formulario y mostrar array en consola
   document.getElementById("formulario").reset();
   console.log(contactos);
 }
-
