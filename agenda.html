@@ -155,26 +155,38 @@
       <h2 class="subtitulo-agenda">RESERVA UNA MESA PARA VISITARNOS</h2>
 
       <div class="contenedor-formulario">
-        <form class="formulario">
+        <form class="formulario" id="formularioReserva">
           <h4>Datos de la reserva</h4>
 
-          <label for="Titular">Titular de la reserva</label>
+          <label for="Nombre titular">Nombre del titular de la reserva</label>
           <input
             type="text"
-            name="Titular"
-            placeholder="Ingresa un nombre completo"
+            name="nombreTitular"
+            id="nombreTitular"
+            placeholder="Ingresa el nombre del titular"
+          />
+
+          <label for="Apellido titular"
+            >Apellido del titular de la reserva</label
+          >
+          <input
+            type="text"
+            name="apellidoTitular"
+            id="apellidoTitular"
+            placeholder="Ingresa el apellido del titular"
           />
 
           <label for="Email">Email</label>
           <input
             type="email"
             name="Email"
+            id="emailTitular"
             placeholder="Ingresa un correo electrónico"
           />
 
-          <label>Cantidad de personas</label>
-          <select>
-            <option selected disabled>
+          <label for="cantidadPersonas">Cantidad de personas</label>
+          <select id="cantidadPersonas">
+            <option selected disabled value="">
               Seleccione la cantidad de personas que asistirán
             </option>
             <option value="1">1 persona</option>
@@ -185,19 +197,31 @@
             <option value="6">6 personas</option>
           </select>
 
-          <label>Horario</label>
-          <select>
-            <option selected disabled>
-              Seleccione el horario en el que asistirán
+          <label for="diaReserva">Día</label>
+          <select id="diaReserva">
+            <option selected disabled value="">
+              Seleccione el día en el que asistirán
             </option>
-            <option value="1">17:00</option>
-            <option value="2">17:30</option>
-            <option value="3">18:00</option>
-            <option value="4">18:30</option>
-            <option value="5">19:00</option>
-            <option value="6">19:30</option>
+            <option value="01/08">01/08</option>
+            <option value="02/08">02/08</option>
+            <option value="03/08">03/08</option>
+            <option value="04/08">04/08</option>
+            <option value="05/08">05/08</option>
+            <option value="06/08">06/08</option>
           </select>
 
+          <label for="horarioReserva">Horario</label>
+          <select id="horarioReserva">
+            <option selected disabled value="">
+              Seleccione el horario en el que asistirán
+            </option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+          </select>
           <button type="submit">Reservar</button>
         </form>
       </div>
@@ -239,5 +263,7 @@
         /></a>
       </div>
     </footer>
+
+    <script src="JS/script.js"></script>
   </body>
 </html>
