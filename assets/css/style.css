@@ -50,7 +50,7 @@ h1 {
 }
 
 .title-contact {
-  margin: 10px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   padding: 0px;
 }
 
@@ -92,6 +92,7 @@ p {
   max-height: 50px;
   width: auto;
   max-width: 100%;
+  margin-left: 20px;
 }
 
 .contenedor-nav {
@@ -113,7 +114,7 @@ p {
 }
 .nav-item {
   color: #efdecd;
-  margin-top: 10px;
+  margin-top: 5px;
   word-break: break-word;
   max-width: 100%;
 }
@@ -121,9 +122,8 @@ p {
 .nav-item:hover {
   font-weight: bold;
   background-color: #564270;
-  border-radius: 5px;
-  padding: 5px 10px;
-  /* transition: background-color 0.2s ease; */
+  border-radius: 3px;
+  padding: 0 10px;
 }
 
 .nav-link {
@@ -181,10 +181,41 @@ h1 {
   margin-top: 3%;
 }
 
-#titulo-agenda{
+#titulo-agenda {
   margin-top: 60px;
 }
 
+#titulo-membresias {
+  margin-top: 60px;
+}
+
+#titulo-buzos {
+  margin-top: 50px;
+}
+
+#titulo-cafe {
+  margin-top: 50px;
+}
+
+#titulo-gorras {
+  margin-top: 50px;
+}
+
+#titulo-libretas {
+  margin-top: 50px;
+}
+
+#titulo-remeras {
+  margin-top: 50px;
+}
+
+#titulo-tazas {
+  margin-top: 50px;
+}
+
+#titulo-vasos {
+  margin-top: 50px;
+}
 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 100;
@@ -259,7 +290,6 @@ p {
 
 /* Contenedor principal */
 .home-eventos {
- 
   padding: 20px;
   margin: 0 20px;
 }
@@ -273,15 +303,14 @@ p {
 }
 
 .home-eventos-texto {
-  display: flex;
+  display:flex;
   flex: 1 1 40%;
   min-width: 250px;
 }
 
-#texto-agenda{
+#texto-agenda {
   padding: 23px;
 }
-
 
 .home-imagen {
   margin-right: 10px;
@@ -435,7 +464,7 @@ select {
 }
 
 .button-a {
-  display:inline-block; /* Para que el botón sea bloque y se pueda centrar */
+  display: inline-block; /* Para que el botón sea bloque y se pueda centrar */
   margin: 75px auto 0 20px; /* Margen arriba y auto a los costados */
   padding: 10px 20px;
   background-color: #7b6d8d;
@@ -446,7 +475,7 @@ select {
   cursor: pointer;
   max-width: 250px;
   width: 50%;
-  height: 75%; 
+  height: 75%;
   box-sizing: border-box;
   font-size: 1rem;
   text-align: center;
@@ -461,6 +490,11 @@ select {
 .titulo.productos {
   margin: 0;
   padding: 0px;
+  /*  margin-top: 70px; */
+}
+
+.titulo-productos {
+  margin-top: 60px;
 }
 
 .grid-categorias {
@@ -888,7 +922,7 @@ label {
 
   .button-a {
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 }
 
@@ -915,7 +949,19 @@ label {
     gap: 30px 100px;
   }
 }
+@media (max-width: 850px) {
+  .home-eventos-texto {
+  display:block;
+  flex: 1 1 40%;
+  min-width: 250px;
+}
 
+#texto-agenda {
+  padding: 23px;
+}
+
+
+}
 @media (max-width: 721px) {
   .carousel-caption-custom h1 {
     font-size: 68px;
@@ -923,6 +969,7 @@ label {
     width: 500px;
     line-height: 68px;
   }
+ 
 }
 
 @media (max-width: 670px) {

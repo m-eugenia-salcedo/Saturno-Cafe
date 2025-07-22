@@ -19,33 +19,65 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <a href="./index.html">
-        <img
-          src="../assets/multimedia/fotos/Saturno2SINTITULO.png"
+
+    <div class=" contenedor-nav"> 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+           <img
+          src="../assets/multimedia/fotos/logo-home-4.png"
           alt="Logo de SATURNO Cafetería"
           id="logo-img"
         />
-      </a>
-
-      <ul class="nav-lista">
-        <li class="nav-item">
-          <a class="nav-link" href="./productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./agenda.html">Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./membresias.html">Membresías</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contactos.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Saturno Café</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../agenda.html">Agenda</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="../membresias.html">Membresías</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="../contactos.html">Contacto</a>
+              </li>
+           
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav></div>
 
     <main>
-      <h1>Buzos</h1>
+      <h1 id="titulo-buzos">Buzos</h1>
       <section class="grid-remeras">
         <div class="remeras-card">
           <img
@@ -74,7 +106,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -107,7 +139,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -139,7 +171,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -172,7 +204,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -205,7 +237,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -237,7 +269,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -270,7 +302,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -303,7 +335,7 @@
             </div>
 
             <div>
-              <a href="./contactos.html" id="contacto-product">Contactanos</a>
+              <a href="../contactos.html" id="contacto-product">Contactanos</a>
             </div>
           </div>
         </div>
@@ -343,5 +375,6 @@
         /></a>
       </div>
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
