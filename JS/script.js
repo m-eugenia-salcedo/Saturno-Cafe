@@ -45,8 +45,6 @@ if (!localStorage.getItem("reservas")) {
   localStorage.setItem("reservas", JSON.stringify(reservas));
 }
 
-
-
 function registrarContacto() {
   const nombre = document.querySelector("#nombreContacto").value;
   const email = document.querySelector("#emailContacto").value;
@@ -78,14 +76,6 @@ function registrarContacto() {
   document.getElementById("formulario").reset();
   console.log(contactos);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const formRes = document.getElementById("formularioReserva");
-  formRes.addEventListener("submit", (e) => {
-    e.preventDefault();
-    registrarReserva();
-  });
-});
 
 function registrarReserva() {
   const nombre = document.getElementById("nombreTitular").value.trim();

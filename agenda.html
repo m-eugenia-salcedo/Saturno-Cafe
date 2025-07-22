@@ -186,7 +186,7 @@
       <h2 class="subtitulo-agenda">RESERVA UNA MESA PARA VISITARNOS</h2>
 
       <div class="contenedor-formulario">
-        <form class="formulario" id="formularioReserva">
+        <form class="formulario" id="formularioReserva" onsubmit="event.preventDefault(); registrarReserva();">
           <h4>Datos de la reserva</h4>
 
           <label for="Nombre titular">Nombre del titular de la reserva</label>
