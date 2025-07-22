@@ -124,3 +124,69 @@ function iniciarSesion() {
     alert("Credenciales incorrectas");
   }
 }
+
+// Mostrar datos en panel.html
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.pathname.includes("panel.html")) {
+    const listaContactos = document.getElementById("lista-contactos");
+    const listaReservas = document.getElementById("lista-reservas");
+
+    // Mostrar contactos
+    if (contactos.length === 0) {
+      const p = document.createElement("p");
+      p.textContent = "No hay contactos registrados.";
+      listaContactos.appendChild(p);
+    } else {
+      contactos.forEach(contacto => {
+        const ficha = document.createElement("div");
+        ficha.className = "ficha-item";
+
+        const nombre = document.createElement("p");
+        nombre.textContent = `🧑 Nombre: ${contacto.nombre}`;
+
+        const email = document.createElement("p");
+        email.textContent = `📧 Email: ${contacto.email}`;
+
+        const mensaje = document.createElement("p");
+        mensaje.textContent = `💬 Mensaje: ${contacto.mensaje}`;
+
+        ficha.appendChild(nombre);
+        ficha.appendChild(email);
+        ficha.appendChild(mensaje);
+
+        listaContactos.appendChild(ficha);
+      });
+    }
+
+    // Mostrar reservas
+    if (reservas.length === 0) {
+      const p = document.createElement("p");
+      p.textContent = "No hay reservas registradas.";
+      listaReservas.appendChild(p);
+    } else {
+      reservas.forEach(reserva => {
+        const ficha = document.createElement("div");
+        ficha.className = "ficha-item";
+
+        const nombre = document.createElement("p");
+        nombre.textContent = `🧑 Nombre: ${reserva.nombre} ${reserva.apellido}`;
+
+        const email = document.createElement("p");
+        email.textContent = `📧 Email: ${reserva.email}`;
+
+        const personas = document.createElement("p");
+        personas.textContent = `👥 Personas: ${reserva.personas}`;
+
+        const diaHora = document.createElement("p");
+        diaHora.textContent = `📅 Día y hora: ${reserva.dia} a las ${reserva.horario}`;
+
+        ficha.appendChild(nombre);
+        ficha.appendChild(email);
+        ficha.appendChild(personas);
+        ficha.appendChild(diaHora);
+
+        listaReservas.appendChild(ficha);
+      });
+    }
+  }
+});
