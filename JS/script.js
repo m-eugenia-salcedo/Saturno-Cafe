@@ -8,13 +8,13 @@ function Contacto(id, nombre, email, mensaje) {
 
 //crear el constructor de Reserva
 function Reserva(id, nombre, apellido, email, personas, dia, horario) {
-  this.id       = id;
-  this.nombre   = nombre;
+  this.id = id;
+  this.nombre = nombre;
   this.apellido = apellido;
-  this.email    = email;
+  this.email = email;
   this.personas = personas;
-  this.dia      = dia;
-  this.horario  = horario;
+  this.dia = dia;
+  this.horario = horario;
 }
 
 //localstorage de contactos
@@ -94,7 +94,7 @@ function registrarReserva() {
     return;
   }
 
-  const ultimoId = reservas.length? reservas[reservas.length - 1].id: 0;
+  const ultimoId = reservas.length ? reservas[reservas.length - 1].id : 0;
   const id = ultimoId + 1;
 
   const nuevaReserva = new Reserva(id, nombre, apellido, email, personas, dia, horario);
@@ -103,8 +103,24 @@ function registrarReserva() {
 
   alert(`¡Reserva confirmada para el ${dia} a las ${horario}!`);
 
-  // acá buscás el form de nuevo y lo reseteás
   document.getElementById("formularioReserva").reset();
 
   console.log("Reservas actuales:", reservas);
+}
+
+function iniciarSesion() {
+  const user = document.getElementById("usuariologin").value;
+  const password = document.getElementById("contraseñalogin").value;
+
+  if (!user || !password) {
+    alert("Por favor completá ambos campos.");
+    return;
+  }
+
+  // Credenciales hardcodeadas
+  if (user === "GerenteSaturno" && password === "saturno567") {
+    window.location.href = "panel.html";
+  } else {
+    alert("Credenciales incorrectas");
+  }
 }

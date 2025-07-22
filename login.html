@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saturno Cafe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="contenedor-formulario">
+          <form class="formulario" id="loginform" onsubmit="event.preventDefault(); iniciarSesion();">
+  
+            <label for="Usuario">Usuario</label>
+            <input
+              name="usuario"
+              id="usuariologin"
+              placeholder="Ingresa el nombre del usuario administrador"
+            />
+
+            <label for="Contraseña">Contraseña</label>
+            <input
+              name="contraseña"
+              id="contraseñalogin"
+              placeholder="Ingresa la contraseña"
+            ></input>
+
+            <button type="submit" >Iniciar Sesión</button>
+          </form>
+    </div>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
