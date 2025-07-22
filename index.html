@@ -19,32 +19,62 @@
     />
   </head>
   <body>
-   <nav class="navbar">
-      <a href="./index.html">
-        <img
+    <div class=" contenedor-nav"> 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+           <img
           src="./assets/multimedia/fotos/Saturno2SINTITULO.png"
           alt="Logo de SATURNO Cafetería"
           id="logo-img"
         />
-      </a>
-
-    
-      <ul class="nav-lista">
-        <li class="nav-item">
-          <a class="nav-link" href="./productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./agenda.html">Agenda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./membresias.html">Membresías</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contactos.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-     
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Saturno Café</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./agenda.html">Agenda</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="./membresias.html">Membresías</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contacto</a>
+              </li>
+           
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav></div>
+   
 
     <header class="banner">
       <h1>SATURNO CAFÉ</h1>
@@ -79,7 +109,13 @@
         <!-- Contenedor de contenido -->
         <div class="home-eventos-contenido">
           <div class="home-eventos-texto">
-            <p>
+
+             <img
+            class="home-imagen"
+            src="./assets/multimedia/fotos/Calendario.png"
+            alt="imagen calendario"
+          />
+            <p id="texto-agenda">
               Visitá nuestra agenda para conocer los próximos eventos,
               encuentros y actividades especiales que tenemos preparados.
               Reservá tu lugar y sumate a las experiencias que hacen de Saturno
@@ -88,11 +124,7 @@
             <a href="./agenda.html" class="button-a">AGENDA</a>
           </div>
 
-          <img
-            class="home-imagen"
-            src="./assets/multimedia/fotos/Calendario.png"
-            alt="imagen calendario"
-          />
+         
         </div>
       </div>
     </main>
@@ -129,7 +161,9 @@
         /></a>
       </div>
     </footer>
-
     <script src="./JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--     <script src="./JS/script.js"></script> -->
   </body>
 </html>
