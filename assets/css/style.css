@@ -95,11 +95,13 @@ p {
   margin-left: 20px;
 }
 
-#logo-img:hover{
+#logo-img:hover {
+  background-color: #3f3f3f;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+  padding: 3px;
   
-  background-color:#3f3f3f;
-  padding: 5px;
-  border-radius: 5px;
 }
 .contenedor-nav {
   padding: 0 0 0 20px;
@@ -314,7 +316,7 @@ p {
 }
 
 .home-eventos-texto {
-  display:flex;
+  display: flex;
   flex: 1 1 40%;
   min-width: 250px;
 }
@@ -1012,16 +1014,14 @@ label {
 }
 @media (max-width: 850px) {
   .home-eventos-texto {
-  display:block;
-  flex: 1 1 40%;
-  min-width: 250px;
-}
+    display: block;
+    flex: 1 1 40%;
+    min-width: 250px;
+  }
 
-#texto-agenda {
-  padding: 23px;
-}
-
-
+  #texto-agenda {
+    padding: 23px;
+  }
 }
 @media (max-width: 721px) {
   .carousel-caption-custom h1 {
@@ -1030,7 +1030,6 @@ label {
     width: 500px;
     line-height: 68px;
   }
- 
 }
 
 @media (max-width: 670px) {
