@@ -19,78 +19,141 @@
     />
   </head>
   <body>
-
-    <div class=" contenedor-nav"> 
+    <div class="contenedor-nav">
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-           <img
-          src="../assets/multimedia/fotos/logo-home-4.png"
-          alt="Logo de SATURNO Cafetería"
-          id="logo-img"
-        />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Saturno Café</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/multimedia/fotos/logo-home-4.png"
+              alt="Logo de SATURNO Cafetería"
+              id="logo-img"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Saturno Café
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../productos.html"
+                    >Productos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../agenda.html">Agenda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../membresias.html">Membresías</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contactos.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../agenda.html">Agenda</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="../membresias.html">Membresías</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="../contactos.html">Contacto</a>
-              </li>
-           
-            </form>
-          </div>
+          <a href="">
+            <img
+              src="../assets/multimedia/fotos/carritoencrema.png"
+              alt="Carrito"
+              id="carrito-img"
+          /></a>
         </div>
-      </div>
-    </nav></div>
+      </nav>
+    </div>
+
+    <!-- Carrito Desplegable -->
+    <div id="carrito-container" class="carrito-hidden">
+      <h5>Tu Carrito:</h5>
+      <ul id="carrito-lista" class="carrito-items">
+        <!-- Productos agregados -->
+      </ul>
+
+      <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+      <button id="cerrar-carrito">X</button>
+    </div>
 
     <main>
       <h1 id="titulo-buzos">Buzos</h1>
+
       <section class="grid-remeras">
+        <!-- Hoddie Saturnino -->
         <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Saturnino Brown.jpg"
-            alt="Buzo Saturnino Marron"
-          />
+          <div id="carouselExample1" class="carousel slide carrusel-producto">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-color="Marrón">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Saturnino Brown.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Saturnino Brown"
+                />
+              </div>
+              <div class="carousel-item" data-color="Gris">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Saturnino Grey.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Saturnino Grey"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Saturnino (Marrón)</div>
+            <div class="titulo-remera">Buzo Saturnino</div>
             <div class="price">$30.000</div>
             <div class="colors">
               Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
+              <span class="color-dot color3" data-color="Marrón"></span>
+              <span class="color-dot color4" data-color="Gris"></span>
             </div>
 
             <div class="custom-select-wrapper">
@@ -106,24 +169,68 @@
             </div>
 
             <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
+              <button
+                class="btn-agregar-carrito"
+                data-nombre="Buzo Saturnino"
+                data-precio="30.000"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
 
+        <!-- Hoddie Café Saturno -->
         <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Saturnino Grey.jpg"
-            alt="Buzo Saturnino Grey"
-          />
-
+          <div id="carouselExample2" class="carousel slide carrusel-producto">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-color="Marrón">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Cafe Saturno Brown.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Cafe Saturno Brown"
+                />
+              </div>
+              <div class="carousel-item" data-color="Gris">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Cafe Saturno Grey.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Cafe Saturno Grey"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Saturnino (Gris)</div>
+            <div class="titulo-remera">Café Saturno</div>
             <div class="price">$30.000</div>
             <div class="colors">
               Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
+              <span class="color-dot color3" data-color="Marrón"></span>
+              <span class="color-dot color4" data-color="Gris"></span>
             </div>
 
             <div class="custom-select-wrapper">
@@ -139,23 +246,68 @@
             </div>
 
             <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
+              <button
+                class="btn-agregar-carrito"
+                data-nombre="Café Saturno"
+                data-precio="30.000"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
 
+        <!-- Hoddie Logo-->
         <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Universe Brown.jpg"
-            alt="Buzo Universe Marron"
-          />
+          <div id="carouselExample3" class="carousel slide carrusel-producto">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-color="Marrón">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Logo Brown.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Logo Brown"
+                />
+              </div>
+              <div class="carousel-item" data-color="Gris">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Logo Grey.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Logo Grey"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Universe (Marrón)</div>
+            <div class="titulo-remera">Buzo Logo</div>
             <div class="price">$30.000</div>
             <div class="colors">
               Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
+              <span class="color-dot color3" data-color="Marrón"></span>
+              <span class="color-dot color4" data-color="Gris"></span>
             </div>
 
             <div class="custom-select-wrapper">
@@ -171,57 +323,67 @@
             </div>
 
             <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
+              <button
+                class="btn-agregar-carrito"
+                data-nombre="Buzo Logo"
+                data-precio="30.000"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
-
+        <!-- Hoddie Universe-->
         <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Universe Grey.jpg"
-            alt="Buzo Universe Grey"
-          />
-
-          <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Universe (Gris)</div>
-            <div class="price">$30.000</div>
-            <div class="colors">
-              Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
+          <div id="carouselExample4" class="carousel slide carrusel-producto">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-color="Marrón">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Universe Brown.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Universe Grey"
+                />
+              </div>
+              <div class="carousel-item" data-color="Gris">
+                <img
+                  src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Universe Grey.jpg"
+                  class="d-block w-100"
+                  alt="Hoddie Universe Brown"
+                />
+              </div>
             </div>
-
-            <div class="custom-select-wrapper">
-              <label for="talle-select">Talles:</label>
-              <select id="talle-select" class="custom-select">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-
-            <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample4"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample4"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </div>
-
-        <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Cafe Saturno D2 Brown.jpg"
-            alt="Buzo Diseño 2 Marrón"
-          />
-
           <div class="detalles-remeras">
-            <div class="titulo-remera">"Buzo Diseño 2 (Marrón)</div>
+            <div class="titulo-remera">Buzo Universe</div>
             <div class="price">$30.000</div>
             <div class="colors">
               Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
+              <span class="color-dot color3" data-color="Marrón"></span>
+              <span class="color-dot color4" data-color="Gris"></span>
             </div>
 
             <div class="custom-select-wrapper">
@@ -237,105 +399,13 @@
             </div>
 
             <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Cafe Saturno D2 Grey.jpg"
-            alt="Buzo Diseño 2 Gris"
-          />
-          <div class="detalles-remeras">
-            <div class="titulo-remera">"Buzo Diseño 2 (Gris)</div>
-            <div class="price">$30.000</div>
-            <div class="colors">
-              Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
-            </div>
-
-            <div class="custom-select-wrapper">
-              <label for="talle-select">Talles:</label>
-              <select id="talle-select" class="custom-select">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-
-            <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Logo Brown.jpg"
-            alt="Buzo Logo Marron"
-          />
-
-          <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Logo (Marrón)</div>
-            <div class="price">$30.000</div>
-            <div class="colors">
-              Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
-            </div>
-
-            <div class="custom-select-wrapper">
-              <label for="talle-select">Talles:</label>
-              <select id="talle-select" class="custom-select">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-
-            <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="remeras-card">
-          <img
-            src="../assets/multimedia/fotos/Productos/Buzos/Hoddie Logo Grey.jpg"
-            alt="Buzo Logo Gris"
-          />
-
-          <div class="detalles-remeras">
-            <div class="titulo-remera">Buzo Logo (Gris)</div>
-            <div class="price">$30.000</div>
-            <div class="colors">
-              Colores disponibles:
-              <span class="color-dot color3"></span>
-              <span class="color-dot color4"></span>
-            </div>
-
-            <div class="custom-select-wrapper">
-              <label for="talle-select">Talles:</label>
-              <select id="talle-select" class="custom-select">
-                <option value="XS">XS</option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-                <option value="XXL">XXL</option>
-              </select>
-            </div>
-
-            <div>
-              <a href="../contactos.html" id="contacto-product">Contactanos</a>
+              <button
+                class="btn-agregar-carrito"
+                data-nombre="Buzo Universe"
+                data-precio="30.000"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         </div>
@@ -375,6 +445,7 @@
         /></a>
       </div>
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
