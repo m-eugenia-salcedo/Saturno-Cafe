@@ -6,14 +6,14 @@ Sitio web institucional de **Saturno Café**, una cafetería temática inspirada
 
 Este repositorio contiene los archivos necesarios para desplegar el sitio web de Saturno Café. La página ofrece información sobre la cafetería, sus productos, eventos especiales, membresías y medios de contacto.
 
-contacto
-
 ## 🚀 Cómo utilizar el proyecto
 Clona este repositorio:
-    git clone https://github.com/tu-usuario/saturno-cafe.git
+    git clone https://github.com/m-eugenia-salcedo/Saturno-Cafe.git
 Abre el archivo index.html en tu navegador.
 
-¡Eso es todo! El sitio es completamente estático, no requiere un servidor backend.
+Para acceder al panel administrador el usuario es **GerenteSaturno** y la contraseña **saturno567**
+
+¡Eso es todo!
 
 
 ## 🛠️ Tecnologías utilizadas
@@ -27,11 +27,12 @@ Abre el archivo index.html en tu navegador.
 
 ## 📸 Imágenes y recursos
 
-Las imágenes están organizadas por categorías de productos, incluyendo café, indumentaria, accesorios y eventos. Todos los recursos se encuentran bajo `assets/multimedia/fotos`. Extraidas de las páginas de Freepik y Flaticon.
+Las imágenes están organizadas por categorías de productos, incluyendo café, indumentaria, accesorios y eventos. Todos los recursos se encuentran bajo `assets/multimedia`. Extraidas de las páginas de Freepik y Flaticon y de producción propia.
 
 ## 📝 Créditos
 
-Proyecto desarrollado en el marco académico. Inspirado en experiencias de marca modernas y cafés de autor.
+Proyecto desarrollado en el marco académico por ZOE QUIROZ Y MARIA EUGENIA SALCEDO. 
+Inspirado en experiencias de marca modernas y cafés de autor.
 
 ---
 
