@@ -1254,7 +1254,22 @@ label {
 
   .home-imagen {
     display: none;
-  }
+  } 
+
+  .carrito-visible {
+  display: block;
+  position: fixed;
+  top: 80px; /* debajo del navbar */
+  right: 20px;
+  width: 350px;
+  background: #151515;
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 }
 
 @media (max-width: 592px) {
