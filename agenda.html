@@ -29,7 +29,7 @@
               id="logo-img"
             />
           </a>
-          <button
+          <div class="menu-hamburguesa-wrapper">  <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
@@ -38,7 +38,8 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button></div>
+        
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -216,13 +217,13 @@
       </div>
 
       <!-- Formulario de reservas -->
-      <h2 class="subtitulo-agenda">RESERVA UNA MESA PARA VISITARNOS</h2>
+      <h2 class="subtitulo-agenda2">RESERVA UNA MESA PARA VISITARNOS</h2>
 
       <div class="contenedor-formulario">
         <form class="formulario" id="formularioReserva" onsubmit="event.preventDefault(); registrarReserva();">
-          <h4>Datos de la reserva</h4>
+          <h4 class="subtitulo-formulario">Datos de la reserva</h4>
 
-          <label for="Nombre titular">Nombre del titular de la reserva</label>
+          <label for="nombreTitular">Nombre del titular de la reserva</label>
           <input
             type="text"
             name="nombreTitular"
@@ -230,7 +231,7 @@
             placeholder="Ingresa el nombre del titular"
           />
 
-          <label for="Apellido titular"
+          <label for="apellidoTitular"
             >Apellido del titular de la reserva</label
           >
           <input
@@ -240,7 +241,7 @@
             placeholder="Ingresa el apellido del titular"
           />
 
-          <label for="Email">Email</label>
+          <label for="emailTitular">Email</label>
           <input
             type="email"
             name="Email"

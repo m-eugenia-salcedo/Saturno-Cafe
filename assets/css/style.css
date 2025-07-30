@@ -92,7 +92,7 @@ p {
   max-height: 50px;
   width: auto;
   max-width: 100%;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 #logo-img:hover {
@@ -351,13 +351,33 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+h2.subtitulo-agenda {
+  font-style: initial;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #1515159c;
+  padding: 15px;
+}
+
+h2.subtitulo-agenda2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  background-color: #1515159c;
+  padding: 15px;
+}
+
+h4.subtitulo-formulario {
+  text-align: center;
+  font-size: 30px;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
   background-color: #7b6d8d;
-  max-width: 75%;
+  max-width: 60%;
   margin: auto;
-  padding: 4%;
+  padding: 3%;
   border: 2px solid #b1754b;
   border-radius: 20px;
 }
@@ -904,7 +924,8 @@ label {
 #carrito-img {
   height: 38px;
   width: auto;
-  padding: 5px 0 0 0;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 #carrito-img:hover {
@@ -998,6 +1019,14 @@ label {
 
 .btn-agregar-carrito:hover {
   background-color: #3f3f3f;
+}
+
+/* Menu Haburguesa */
+.menu-hamburguesa-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: -1;
 }
 
 @media (max-width: 1799px) {
@@ -1159,6 +1188,14 @@ label {
     grid-template-columns: repeat(auto-fit, minmax(40%, 5fr));
     gap: 30px 100px;
   }
+
+  /* Menu Haburguesa */
+  .menu-hamburguesa-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: -1;
+  }
 }
 @media (max-width: 850px) {
   .home-eventos-texto {
@@ -1169,6 +1206,24 @@ label {
 
   #texto-agenda {
     padding: 23px;
+  }
+
+  .button-a {
+    display: inline-block; /* Para que el botón sea bloque y se pueda centrar */
+    margin: 10px auto 0 20px; /* Margen arriba y auto a los costados */
+    padding: 10px 20px;
+    background-color: #7b6d8d;
+    color: var(--color-primario);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 250px;
+    width: 50%;
+    height: 75%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -1254,22 +1309,21 @@ label {
 
   .home-imagen {
     display: none;
-  } 
+  }
 
   .carrito-visible {
-  display: block;
-  position: fixed;
-  top: 80px; /* debajo del navbar */
-  right: 20px;
-  width: 350px;
-  background: #151515;
-  color: #ccc;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  z-index: 9999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+    display: block;
+    position: fixed;
+    top: 80px; /* debajo del navbar */
+    right: 20px;
+    width: 350px;
+    background: #151515;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (max-width: 592px) {
@@ -1379,6 +1433,36 @@ label {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 5fr));
     gap: 30px 100px;
+  }
+
+  .carrito-visible {
+    display: block;
+    position: fixed;
+    top: 80px; /* debajo del navbar */
+    right: 20px;
+    width: 300px;
+    background: #151515;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 320px) {
+  .carrito-visible {
+    display: block;
+    position: fixed;
+    top: 80px; /* debajo del navbar */
+    right: 20px;
+    width: 250px;
+    background: #151515;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 }
 

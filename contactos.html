@@ -30,16 +30,19 @@
               id="logo-img"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="menu-hamburguesa-wrapper">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -88,7 +91,7 @@
               </ul>
             </div>
           </div>
-             <a href="">
+          <a href="">
             <img
               src="./assets/multimedia/fotos/carritoencrema.png"
               alt="Carrito"
@@ -98,7 +101,7 @@
       </nav>
     </div>
 
-       <!-- Carrito Desplegable -->
+    <!-- Carrito Desplegable -->
     <div id="carrito-container" class="carrito-hidden">
       <h5>Tu Carrito:</h5>
       <ul id="carrito-lista" class="carrito-items">
@@ -119,8 +122,12 @@
         </p>
 
         <div class="contenedor-formulario">
-          <form class="formulario" id="formulario" onsubmit="event.preventDefault(); registrarContacto();">
-            <label for="Nombre">Nombre</label>
+          <form
+            class="formulario"
+            id="formulario"
+            onsubmit="event.preventDefault(); registrarContacto();"
+          >
+            <label for="nombreContacto">Nombre</label>
             <input
               type="text"
               name="Nombre"
@@ -128,7 +135,7 @@
               placeholder="Ingresa tu nombre completo"
             />
 
-            <label for="Email">Email</label>
+            <label for="emailContacto">Email</label>
             <input
               type="email"
               name="Email"
@@ -136,7 +143,7 @@
               placeholder="Ingresa tu correo electrónico"
             />
 
-            <label for="mensaje">Mensaje</label>
+            <label for="mensajeContacto">Mensaje</label>
             <textarea
               class="caja-mensaje-grande"
               placeholder="Dejanos tu mensaje..."
@@ -144,7 +151,7 @@
               id="mensajeContacto"
             ></textarea>
 
-            <button type="submit" >Enviar</button>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </section>
